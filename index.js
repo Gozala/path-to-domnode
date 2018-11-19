@@ -2,7 +2,7 @@
  * path-to-domnode
  * Copyright (C) 2016 Marcel Klehr <mklehr@gmx.net>
  */
-module.exports = function pathTo(node, root) {
+export default function pathTo(node, root) {
   if(!root) throw new Error('No root node specified.')
 
   if(node === root) return []
